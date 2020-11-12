@@ -9,7 +9,7 @@ $presentation = addslashes($_POST['presentation']);
 $moteur = addslashes($_POST['moteur']);
 $puissance = addslashes($_POST['puissance']);
 $consommation = addslashes($_POST['consommation']);
-$prix = addslashes($_POST['producteur']);
+$prix = addslashes($_POST['prix']);
 $description = addslashes($_POST['description']);
 
 //echo "<div>" . $titre . "</div>";
