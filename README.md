@@ -2,4 +2,4 @@
 
 ## Botrel Jeremiah
 
-## https://tim.cgmatane.qc.ca/etudiants/2019/botrelj/LuxCars/liste-voiture.php
+## https://tim.cgmatane.qc.ca/etudiants/2019/botrelj/LuxCars/administration
