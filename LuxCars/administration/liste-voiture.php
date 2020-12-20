@@ -49,7 +49,7 @@
 						<h4 class="marque">
 							<?php echo $voiture['marque']; ?>					
 						</h4>
-						<div class="illustration"><img src="img/<?php echo$voiture['illustration']?>" alt="voiture"></div>
+						<div class="illustration"><img src="../illustration/mini/<?php echo$voiture['illustration']?>" alt="voiture"></div>
 						<p class="presentation"><?php echo $voiture['presentation']; ?></p>
 					</a>
 					<div class="btn">

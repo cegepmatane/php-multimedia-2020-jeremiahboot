@@ -2,7 +2,7 @@
 
 //print_r($_POST);
 
-$id = $_POST['id'];
+$id = filter_var($_POST['id'],FILTER_SANITIZE_STRING);
 
 
 //echo "<div>" . $titre . "</div>";

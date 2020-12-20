@@ -1,22 +1,22 @@
 <?php
-
+include "proposer-illustration.php";
 print_r($_POST);
 //https://www.php.net/manual/fr/function.addslashes.php
-$marque = addslashes($_POST['marque']);
+$marque = addslashes(filter_var($_POST['marque'],FILTER_SANITIZE_STRING));
 //$illustration = $_POST['illustration'];
-$presentation = addslashes($_POST['presentation']);
-$moteur = addslashes($_POST['moteur']);
-$puissance = addslashes($_POST['puissance']);
-$consommation = addslashes($_POST['consommation']);
-$prix = addslashes($_POST['producteur']);
-$description = addslashes($_POST['description']);
+$presentation = addslashes(filter_var($_POST['presentation'],FILTER_SANITIZE_STRING));
+$moteur = addslashes(filter_var($_POST['moteur'],FILTER_SANITIZE_STRING));
+$puissance = addslashes(filter_var($_POST['puissance'],FILTER_SANITIZE_STRING));
+$consommation = addslashes(filter_var($_POST['consommation'],FILTER_SANITIZE_STRING));
+$prix = addslashes(filter_var($_POST['prix'],FILTER_SANITIZE_STRING));
+$description = addslashes(filter_var($_POST['description'],FILTER_SANITIZE_STRING));
 
 $fichier_source = $_FILES['illustration']['tmp_name'];
 echo "fichier source = " . $fichier_source . "<br>";
 
 $racine_serveur = $_SERVER['DOCUMENT_ROOT']; // "C:\Bitnami\wampstack-7.1.26-0\apache2\htdocs";  // 
-$repertoire_projet = "/LuxCars";
-$repertoire_image = "/img/";
+$repertoire_projet = "/LuxCars"; ///etudiants/2019/botrelj/ 
+$repertoire_image = "/illustration/";
 $nom_image = $_FILES['illustration']['name'];
 $fichier_destination = $racine_serveur . $repertoire_projet . $repertoire_image . $nom_image;
 
@@ -34,7 +34,7 @@ $reussiteAjout = $requeteAjouterVoiture->execute();
 
 
 <?php
-if($succes) echo '<img src="img/'.$nom_image.'">';
+if($succes) echo '<img src="../illustration/'.$nom_image.'">';
 if($reussiteAjout) 
 
 {

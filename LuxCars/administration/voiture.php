@@ -1,5 +1,5 @@
 <?php
-	$idVoiture = $_GET['voiture'];
+	$idVoiture = filter_var($_GET['voiture'], FILTER_SANITIZE_NUMBER_INT);
 
 	$MESSAGE_SQL_VOITURE = "SELECT * FROM voiture WHERE id = " . $idVoiture;
 
@@ -20,11 +20,11 @@
 </head>
 
 <body>
-	
+
 <header>
 	<h1><a href="liste-voiture.php" class="logo">LuxCars</a></h1>
 	<nav>
-		<h2><a href="liste-voiture.php" class="panneauAdmin">Panneau d'administration</a></h2>
+		<h2><a href="liste-voiture.php" class="acceuil">Acceuil</a></h2>
 	</nav>
 </header>
 
@@ -33,7 +33,7 @@
 			<h3 class="marque">
 				<?php echo $voiture['marque']; ?>
 			</h3>
-			<div class="illustration img"><img src="img/<?php echo$voiture['illustration']?>" alt="voiture"></div>
+			<div class="illustration img"><img src="../illustration/<?php echo$voiture['illustration']?>" alt="voiture"></div>
 			<p class="moteur">Moteur: <?php echo $voiture['moteur']; ?></p>
 			<p class="puissance">Puissance: <?php echo $voiture['puissance']; ?></p>
 			<p class="consommation">Consommation: <?php echo $voiture['consommation']; ?></p>

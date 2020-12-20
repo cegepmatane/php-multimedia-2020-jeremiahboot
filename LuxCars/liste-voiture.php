@@ -15,8 +15,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>LuxCars</title>
-
-	 <link rel="stylesheet" href="style/style.css">  
+	<link rel="alternate" type="application/rss+xml" href="https://tim.cgmatane.qc.ca/etudiants/2019/botrelj/luxcars/rss.php" />
+	<link rel="stylesheet" href="style/style.css">  
 	
 </head>
 
@@ -37,7 +37,7 @@
 		
 		foreach($listeVoitures as $voiture)
 		{
-			
+			if(empty($voiture['illustration'])) $voiture['illustration'] = 'mouton.png';
 			?>
 		
 
@@ -47,7 +47,7 @@
 					<h4 class="marque">
 						<?php echo $voiture['marque']; ?>					
 					</h4>
-					<div class="illustration"><img src="img/<?php echo$voiture['illustration']?>" alt="voiture"></div>
+					<div class="illustration"><img src="illustration/mini/<?php echo$voiture['illustration']?>" alt="voiture"></div>
 					<p class="presentation"><?php echo $voiture['presentation']; ?></p>
 				</a>
 			</div>
