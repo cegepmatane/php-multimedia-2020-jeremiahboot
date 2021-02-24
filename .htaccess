@@ -1,4 +1,0 @@
-AuthName "Panneau administrateur protegee"
-AuthType Basic
-AuthUserFile "/home/tim/public_html/etudiants/2019/botrelj/mdp/chemin.php"
-Require valid-user
