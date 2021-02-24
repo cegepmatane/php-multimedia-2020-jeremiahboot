@@ -1,5 +1,3 @@
-
-
 <?php
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
@@ -16,7 +14,7 @@
     }
     else {
         $usager = 'root';
-        $motdepasse = '14062000';
+        $motdepasse = '140600';
         $hote = 'localhost';
         $base = 'luxcars';
     }
