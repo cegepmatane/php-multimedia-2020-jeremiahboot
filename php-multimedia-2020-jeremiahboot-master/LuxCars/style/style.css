@@ -1,0 +1,108 @@
+body {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  background-color: black;
+  width: 15%;
+  text-align: center;
+  margin: 0px 0px;
+  padding: 0;
+  font-size: 3em;
+}
+.logo {
+  color: white;
+  margin-bottom: 0px;
+}
+
+nav {
+  background-color: #d79a10;
+  height: 3em;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+
+.acceuil {
+  color: black;
+}
+
+.acceuil:hover {
+  font-size: 1.25em;
+  transition: ease 600ms;
+}
+
+.box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.voitures {
+  width: 35%;
+  border: solid 3px black;
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.voitures:hover {
+  width: 40%;
+  border: solid 4px black;
+  transition: ease 1000ms;
+}
+
+img {
+  width: 70%;
+}
+
+.illustration {
+  text-align: center;
+}
+
+.marque {
+  text-align: center;
+  color: black;
+  font-style: bold;
+  font-size: 1.5em;
+}
+
+.presentation {
+  color: black;
+}
+
+footer {
+  background-color: #d79a10;
+  padding: 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.voiture {
+  width: 60%;
+  border: solid 3px black;
+  margin: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.contenu {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
