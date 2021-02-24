@@ -1,0 +1,86 @@
+
+</head>
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>LuxCars</title>
+
+	 <link rel="stylesheet" href="style/style2.css">  
+	
+</head>
+
+<body>
+	
+	<header>
+		<h1><a href="liste-voiture.php" class="logo">LuxCars</a></h1>
+		<nav>
+			<h2><a href="liste-voiture.php" class="panneauAdmin">Panneau d'administration</a></h2>
+		</nav>
+	</header>
+
+		<div class="titre">
+			<h2>Ajouter une voiture</h2>
+		</div>
+		<section class="contenu">
+			
+			
+			<form action="traitement-ajouter-voiture.php" method="post" enctype="multipart/form-data">
+			
+				<div class="champs">
+					<label for="titre">Marque</label>
+					<input type="text" name="marque" id="marque"/>			
+				</div>
+			
+				<div class="champs">
+				<label for="titre">Illustration</label>
+						<fieldset>	
+							<p>
+								<input type="file" name="illustration" id="illustration" />
+							</p>
+						</fieldset>		
+				</div>
+							
+				<div class="champs">
+					<label for="titre">Presentation</label>
+					<textarea name="presentation" id="presentation"></textarea>			
+				</div>
+				
+				<div class="champs">
+					<label for="titre">Moteur</label>
+					<input type="text" name="moteur" id="moteur"/>			
+				</div>			
+				
+				<div class="champs">
+					<label for="titre">Puissance</label>
+					<input type="text" name="puissance" id="puissance"/>			
+				</div>	
+				
+				<div class="champs">
+					<label for="titre">Consommation</label>
+					<input type="text" name="consommation" id="consommation"/>			
+				</div>	
+
+				<div class="champs">
+					<label for="titre">Prix</label>
+					<input type="text" name="prix" id="prix"/>			
+				</div>
+				
+				<div class="champs">
+					<label for="titre">Desciption</label>
+					<textarea name="description" id="description"></textarea>			
+				</div>
+				
+				<input type="submit" value="Enregistrer">
+			</form>
+		
+		</section>
+		
+	
+	<footer>
+		<p>&copy;Cegep de Matane </p>
+		<p>Réalisé par Botrel Jeremiah dans le cadre du cours de base de données</p>
+	</footer>
+</body>
+</html>
