@@ -1,0 +1,61 @@
+@font-face{
+  font-family: luxe;
+  src: url(../font/Luxerie.otf);
+}
+
+
+
+.js-Accordion {
+  margin: 0 auto;
+  max-width: 30em;
+  width: 100%;
+  background-color: grey;
+}
+.js-Accordion-title {
+  background: grey;
+  border: 3px solid black;
+  border-top: 0;
+  cursor: pointer;
+  display: block;
+  padding: 1em 0.5em;
+  width: 100%;
+  font-family: Agency FB;
+  font-size: 1.4em;
+  font-style: bold;
+}
+.js-Accordion-title:first-child {
+  border-top: 1px solid #ccc;
+}
+.js-Accordion-content {
+  border-left:3px solid black ;
+  border-right:3px solid black ;
+  height: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.25s linear;
+  text-align: justify;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+.js-Accordion-content:not([style="height: 0px;"]) {
+  height: auto !important;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  color: #ffd700;
+  font-family: luxe;
+}
+
+h2{
+  color: whitesmoke;
+  font-family: luxe;
+  display: flex;
+  justify-content: center;
+}
+
+body{
+  background-color: black;
+}
