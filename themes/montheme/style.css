@@ -1,0 +1,165 @@
+/*
+Theme Name: montheme
+Author: Jeremiah Botrel
+Description: mon premier theme wordpress
+Version: 1.0
+*/
+
+.header{
+    background-color: #d79a10;
+    text-align: center;
+}
+
+
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  
+  
+
+}
+
+.menu-item{
+    padding: 10px;
+    border : solid 4px #d79a10;
+    background-color: black;
+    font-size: 2em;
+}
+
+.menu-item > a{
+
+    text-decoration: none;
+    color: white;
+    
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.archive>#container>#loop>#content>.post{
+    padding:5%;
+    margin-top: 25px;
+    margin:-17px;
+    width: 400px;
+}
+#loop{
+    width: 65%;
+    padding-left:5%;
+    margin-top: 25px;
+}
+
+#sidebar{
+    width: 15%;
+    height: 325px;
+    border: solid 3px black;
+    padding: 50px;
+    margin-right: 5%;
+    margin-top: 25px;
+    margin-left: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+.archive > #container >#loop >#content{
+  display: grid;
+  
+  grid-template-columns: 400px 400px;
+  align-items: start;
+  justify-content: space-between;
+    
+}
+
+
+.widget > ul{
+    list-style: none;
+    padding:0;
+}
+
+.widget > ul > li> a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #d79a10 ;
+}
+
+.calendar_wrap{
+    margin: 10px;
+    
+}
+
+.post{
+    width: 84%;
+    text-align: center;
+    border: solid 3px black;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+
+.post > header > h1{
+    font-size: 2em;
+}
+
+.post > header > h1 > a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.post-data {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-data > a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post > p{
+    text-align: justify;
+    padding: 7px;
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(44, 43, 43);
+    opacity: 0.7;
+}
+
+.post > p > a{
+    text-decoration: none;
+    
+}
+
+
+.post-template-default > #container >#loop >#content> p{
+    font-size: 28px;
+}
+
+
+h6{
+    font-size: 1.3em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.page-numbers{
+    background-color: black;
+}
+
