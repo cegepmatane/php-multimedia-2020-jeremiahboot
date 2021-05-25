@@ -41,6 +41,9 @@
     <?php if (paginate_links()) : ?>
     <div id="pagination"><?php echo paginate_links(); ?> </div>
     <?php endif; ?>
+    <?php portefolio_baliser_extrait($extrait); ?>
+    <?php echo wpdocs_excerpt_more($more); ?>
+    <?php echo licence(); ?>
 </div>
 <?php else : ?>
 <p> Il n'y a pas d'articles </p>

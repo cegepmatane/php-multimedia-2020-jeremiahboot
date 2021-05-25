@@ -5,102 +5,89 @@ Description: mon premier theme wordpress
 Version: 1.0
 */
 
-.header{
+.header {
     background-color: #d79a10;
     text-align: center;
 }
 
-
-.menu{
+.menu {
     display: flex;
     list-style: none;
     justify-content: center;
-  
-  
-
 }
 
-.menu-item{
+.menu-item {
     padding: 10px;
-    border : solid 4px #d79a10;
+    border: solid 4px #d79a10;
     background-color: black;
     font-size: 2em;
 }
 
-.menu-item > a{
-
+.menu-item>a {
     text-decoration: none;
     color: white;
-    
 }
 
-#container{
+#container {
     display: flex;
     justify-content: space-between;
-   
 }
-.archive>#container>#loop>#content>.post{
-    padding:5%;
+
+.archive>#container>#loop>#content>.post {
+    padding: 5%;
     margin-top: 25px;
-    margin:-17px;
+    margin: -17px;
     width: 400px;
 }
-#loop{
+
+#loop {
     width: 65%;
-    padding-left:5%;
+    padding-left: 5%;
     margin-top: 25px;
 }
 
-#sidebar{
+#sidebar {
     width: 15%;
-    height: 325px;
+    height: 100%;
     border: solid 3px black;
     padding: 50px;
     margin-right: 5%;
     margin-top: 25px;
     margin-left: 3px;
+    margin-bottom: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    
-    
 }
 
-.archive > #container >#loop >#content{
-  display: grid;
-  
-  grid-template-columns: 400px 400px;
-  align-items: start;
-  justify-content: space-between;
-    
+.archive>#container>#loop>#content {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    align-items: start;
+    justify-content: space-between;
 }
 
-
-.widget > ul{
+.widget>ul {
     list-style: none;
-    padding:0;
+    padding: 0;
 }
 
-.widget > ul > li> a {
+.widget>ul>li>a {
     text-decoration: none;
     color: black;
 }
 
-
-
-
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     padding-left: 20%;
     padding-right: 20%;
-    background-color: #d79a10 ;
+    background-color: #d79a10;
 }
 
-.calendar_wrap{
+.calendar_wrap {
     margin: 10px;
-    
 }
 
-.post{
+.post {
     width: 84%;
     text-align: center;
     border: solid 3px black;
@@ -109,27 +96,28 @@ footer{
     color: white;
 }
 
-.post > header > h1{
+.post>header>h1 {
     font-size: 2em;
 }
 
-.post > header > h1 > a{
+.post>header>h1>a {
     text-decoration: none;
     color: white;
     text-align: center;
 }
+
 .post-data {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-data > a{
+.post-data>a {
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.post > p{
+.post>p {
     text-align: justify;
     padding: 7px;
     margin: 0;
@@ -139,27 +127,34 @@ footer{
     opacity: 0.7;
 }
 
-.post > p > a{
+.post>p>a {
     text-decoration: none;
-    
 }
 
-
-.post-template-default > #container >#loop >#content> p{
+.post-template-default>#container>#loop>#content>p {
     font-size: 28px;
 }
 
-
-h6{
+h6 {
     font-size: 1.3em;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+.page-numbers {
+    background-color: black;
     color: white;
 }
 
-.page-numbers{
-    background-color: black;
+blockquote>p>a {
+    text-decoration: none;
+    color: grey;
 }
 
+.widget_text {
+    text-align: center;
+    background-color: #ce9311;
+    height: 33%;
+}

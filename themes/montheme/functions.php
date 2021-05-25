@@ -75,9 +75,50 @@ function register_my_sidebar()
             'after_title' => '</h2>'
         )
     );
+
+    function licence()
+    {
+        return '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licence Creative Commons"
+            style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Ce(tte) œuvre est
+    mise à disposition selon les termes de la <a rel="license"
+        href="http://creativecommons.org/licenses/by/4.0/">Licence Creative Commons Attribution 4.0 International</a>';
+    }
+
+    function copyrightDate()
+    {
+        return date("Y");
+    }
+
+    // On commence par définir la fonction
+    function portefolio_baliser_extrait($extrait)
+    {
+        return ('<blockquote>' . $extrait . '</blockquote>');
+    }
+    //Connecter avec le filtre
+
+    function wpdocs_excerpt_more($more)
+    {
+        if (!is_single()) {
+            $more = sprintf(
+                '<a class="read-more" href="%1$s">%2$s</a>',
+                get_permalink(get_the_ID()),
+                __('Read More', 'textdomain')
+            );
+        }
+
+        return $more;
+    }
 }
 
+
+
+
+
+
+
 add_action('after_setup_theme', 'montheme_supports');
+add_filter('excerpt_more', 'wpdocs_excerpt_more');
+add_filter('the_excerpt', 'portefolio_baliser_extrait');
 add_filter('document_title_parts', 'montheme_document_title_parts');
 add_action('widgets_init', 'register_my_sidebar');
 add_action('wp_enqueue_scripts', 'montheme_stylesheet');
